@@ -3,6 +3,7 @@ from settings import *
 from level import Level
 
 class Game: 
+    ## Initialization setup
     def __init__( self ):
 
         # Initialize the game
@@ -17,7 +18,7 @@ class Game:
         # Level attribute for what level we are on
         self.level = Level()
 
-    # Where most of the game is run 
+    ## General Commands Used to Run the Game
     def run( self ):
         while True:
             for event in pygame.event.get():
